@@ -208,17 +208,12 @@ namadac bond \
   --validator "<Validator address>" \
   --source "<Wallet address>" \
   --signing-keys "<Wallet Public key>" \
-  --amount 
+  --amount "<Amount>"
 ```
 
 #### <center> Check bouns
 ```
 namadac bonds --owner "<Wallet address>"
-```
-
-#### <center> Check delegations
-```
-namadac delegations --owner "<Wallet address>"
 ```
 
 #### <center> unbond
@@ -229,6 +224,15 @@ namadac unbond --source "<Wallet address>" --validator "<Validator address>" --a
 #### <center> withdraw
 ```
 namadac withdraw --source "<Wallet address>" --validator "<Validator address>" 
+```
+#### <enter> Claim rewards
+```
+namadac claim-rewards --validator "<Validator address>" --source "<Wallet address>"
+```
+
+#### <center> Check delegations
+```
+namadac delegations --owner "<Wallet address>"
 ```
 
 #### <enter> redelegate
