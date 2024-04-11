@@ -249,3 +249,52 @@ namadaw list --addr
 ```
 namadaw list --keys
 ```
+
+#### <enter> Generate shielded account on MASP 
+```
+namadaw gen --shielded --alias "<Spending Key Alias>"
+```
+
+#### <enter> Generate Payment account
+```
+namadaw gen-payment-addr --key "<Spending Key Alias>" --alias "<Payment Key Alias>"
+```
+
+#### <enter> Shielding transfer
+```
+namadac transfer \
+    --token naan \
+    --amount "<Amount>" \
+    --target "<Payment Key Alias>" \
+    --source "<Wallet address>" \
+    --signing-keys "<Wallet Public key>"
+```
+
+#### <enter> Shielded transfer 
+```
+namadac transfer \
+    --token naan \
+    --amount "<Amount>" \
+    --target "<Destination Payment Key Alias>" \
+    --source "<Source Spending Key Alias>" \
+    --signing-keys "<Wallet Public key>"
+```
+
+#### <enter> Unshielding transfer
+```
+namadac transfer \
+    --token naan \
+    --amount "<Amount>" \
+    --target "<Wallet address>" \
+    --source "<Spending Key Alias>" \
+    --signing-keys "<Wallet Public key>"
+```
+#### <enter> Shielded sync data
+```
+namadac shielded-sync
+```
+
+#### <enter> Check then balance of shielded account 
+```
+namadac balance --owner "<Spending Key Alias>"
+```
