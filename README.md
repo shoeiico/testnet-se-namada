@@ -194,12 +194,12 @@ sudo service namadad restart<br />
 
 #### <center> Import Registered Account
 ```
-namadac validator-state --validator "<Validator address>"
+namadaw derive --alias "<Wallet address>"
 ```
 
 #### <center> Check Balance
 ```
-namadac unjail-validator --validator  "<Validator address>"
+namadac balance --owner "<Wallet address>"
 ```
 
 #### <center> Bond
@@ -229,4 +229,19 @@ namadac unbond --source "<Wallet address>" --validator "<Validator address>" --a
 #### <center> withdraw
 ```
 namadac withdraw --source "<Wallet address>" --validator "<Validator address>" 
+```
+
+#### <enter> redelegate
+```
+namadac redelegate --source-validator "<Source Validator address>" --destination-validator "<Destination Validator address>" --owner "<Wallet address>"  --amount "<Amount>"
+```
+
+#### <enter> list all of addresses
+```
+namadaw list --addr
+```
+
+#### <enter> list all of keys
+```
+namadaw list --keys
 ```
