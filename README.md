@@ -225,7 +225,7 @@ namadac unbond --source "<Wallet address>" --validator "<Validator address>" --a
 ```
 namadac withdraw --source "<Wallet address>" --validator "<Validator address>" 
 ```
-#### <enter> Claim rewards
+#### <center> Claim rewards
 ```
 namadac claim-rewards --validator "<Validator address>" --source "<Wallet address>"
 ```
@@ -235,12 +235,12 @@ namadac claim-rewards --validator "<Validator address>" --source "<Wallet addres
 namadac delegations --owner "<Wallet address>"
 ```
 
-#### <enter> Redelegate
+#### <center> Redelegate
 ```
 namadac redelegate --source-validator "<Source Validator address>" --destination-validator "<Destination Validator address>" --owner "<Wallet address>"  --amount "<Amount>"
 ```
 
-#### <enter> Transparent Transfer 
+#### <center> Transparent Transfer 
 ```
 namadac transfer \
     --token naan \
@@ -250,27 +250,27 @@ namadac transfer \
     --signing-keys "<Wallet Public key>"
 ```
 
-#### <enter> List all of addresses
+#### <center> List all of addresses
 ```
 namadaw list --addr
 ```
 
-#### <enter> List all of keys
+#### <center> List all of keys
 ```
 namadaw list --keys
 ```
 
-#### <enter> Generate shielded account on MASP 
+#### <center> Generate shielded account on MASP 
 ```
 namadaw gen --shielded --alias "<Spending Key Alias>"
 ```
 
-#### <enter> Generate Payment account
+#### <center> Generate Payment account
 ```
 namadaw gen-payment-addr --key "<Spending Key Alias>" --alias "<Payment Key Alias>"
 ```
 
-#### <enter> Shielding transfer
+#### <center> Shielding transfer
 ```
 namadac transfer \
     --token naan \
@@ -280,7 +280,7 @@ namadac transfer \
     --signing-keys "<Wallet Public key>"
 ```
 
-#### <enter> Shielded transfer 
+#### <center> Shielded transfer 
 ```
 namadac transfer \
     --token naan \
@@ -290,7 +290,7 @@ namadac transfer \
     --signing-keys "<Wallet Public key>"
 ```
 
-#### <enter> Unshielding transfer
+#### <center> Unshielding transfer
 ```
 namadac transfer \
     --token naan \
@@ -299,12 +299,13 @@ namadac transfer \
     --source "<Spending Key Alias>" \
     --signing-keys "<Wallet Public key>"
 ```
-#### <enter> Shielded sync data
+
+#### <center> Shielded sync data
 ```
 namadac shielded-sync
 ```
 
-#### <enter> Check then balance of shielded account 
+#### <center> Check then balance of shielded account 
 ```
 namadac balance --owner "<Spending Key Alias>"
 ```
