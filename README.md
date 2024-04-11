@@ -240,6 +240,16 @@ namadac delegations --owner "<Wallet address>"
 namadac redelegate --source-validator "<Source Validator address>" --destination-validator "<Destination Validator address>" --owner "<Wallet address>"  --amount "<Amount>"
 ```
 
+#### <enter> Transparent Transfer 
+```
+namadac transfer \
+    --token naan \
+    --amount "<Amount>" \
+    --target "<Destination Wallet Alias/address>" \
+    --source "<Source Wallet Alias/address>" \
+    --signing-keys "<Wallet Public key>"
+```
+
 #### <enter> List all of addresses
 ```
 namadaw list --addr
