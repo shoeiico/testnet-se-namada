@@ -104,7 +104,7 @@ sudo mv cometbft/cometbft /usr/local/bin/<br />
 <br />
 git clone https://github.com/anoma/namada.git<br />
 cd namada<br />
-git checkout v0.31.6<br />
+git checkout v0.32.1<br />
 make install<br />
 sudo chmod +x ~/.cargo/bin/namada*<br />
 sudo mv ~/.cargo/bin/namada* /usr/local/bin<br />
@@ -121,9 +121,9 @@ sudo mv ~/.cargo/bin/namada* /usr/local/bin<br />
 ">
 <b><strong>Install Official Namada Binaries</strong></b><br />
 <br />
-wget https://github.com/anoma/namada/releases/download/v0.31.6/namada-v0.31.6-Linux-x86_64.tar.gz<br />
-tar -zxvf namada-v0.31.6-Linux-x86_64.tar.gz<br />
-sudo mv namada-v0.31.6-Linux-x86_64/namada* /usr/local/bin/<br />
+wget https://github.com/anoma/namada/releases/download/v0.32.1/namada-v0.32.1-Linux-x86_64.tar.gz<br />
+tar -zxvf namada-v0.32.1-Linux-x86_64.tar.gz<br />
+sudo mv namada-v0.32.1-Linux-x86_64/namada* /usr/local/bin/<br />
 </div>
 
 ## <center> Start Node
@@ -173,7 +173,7 @@ EOF
 sudo chmod 755 /etc/systemd/system/namadad.service<br />
 sudo systemctl daemon-reload<br />
 sudo systemctl enable namadad<br />
-sudo systemctl start namadad && sudo journalctl -u namadad -n 1000 -f
+sudo systemctl start namadad && sudo journalctl -u namadad -n 100 -f
 </div>
 
 #### <center> Service Operations
